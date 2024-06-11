@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form di Registrazione</title>
+        <style>
+        body {
+            margin-left: 30%;
+			margin-right: 30%;
+            font-family: Arial;
+            font-size: 22px;
+            text-align: center;
+            background: #a9d6bf; 
+        }
+		p {
+			text-align: left;
+			color: red;
+		} 
+		#btnid {
+			text-align: center;		
+		}
+		
+		input[type = submit], input[type = reset] {
+            background-color: orange; 
+			font-size: 22px;	
+         }		
+        </style>
+
+    </head>
+    <body>
+        <h1>Modulo di Registrazione</h1>
+        <form action="https://www.booking.com/start.php"  method="get"> <!-- action permette di inviare i dati ad un sito, meyhod come li inviamo-->
+            <p>
+                <label for="fname">Nome:</label><br>  <!-- crea l'etichetta "nome"-->
+                <input type="text" name ="fname"> <!-- crea il riquadro per inserire i dati-->
+            </p>
+            <input type="submit" values ="invia dati">
+        </form>
+
+    </body>
+
+
+</html>
