@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <form action = "https://www.amazon.it/imieidati" method="get">
+        <input type="hidden" name="miaVar" value="okokok">
+        <div class="form-group">
+          <label for="inputCognome">Cognome</label>
+          <input name="vCognome" type="text" class="form-control" id="inputCognome" aria-describedby="cognomeHelp" placeholder="Inserisci il tuo cognome" required minlength="2" pattern="[a-zA-Z]+[ ]?+[a-zA-Z]*">
+          <small id="cognomeHelp" class="form-text text-muted">Inserisci in questo campo il tuo cognome.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputNome">Nome</label>
+          <input name="vNome" type="text" class="form-control" id="InputNome" aria-describedby="nomeHelp" placeholder="Inserisci il tuo nome" required minlength="2" pattern="[a-zA-Z]+[ ]?+[a-zA-Z]*">
+          <small id="NomeHelp" class="form-text text-muted">Inserisci in questo campo il tuo nome.</small>
+        </div>
+        <div class="form-group">
+            <label for="InputIstruzione">Livello d'istruzione</label>
+            <select name="vIstruzione" class="form-control" id="InputIstruzione">
+              <option value="0">Nessuno</option>
+              <option value="1">Elementare</option>
+              <option value="2">Media</option>
+              <option value="3" selected>Diploma</option>
+              <option value="4">Laurea</option>
+            </select>
+          </div>
+        <div class="form-group">
+              <label for="InputCv">Inserisci il tuo Cv</label>
+              <input name="vCV" type="file"  accept=".pdf" class="form-control-file" id="InputCv">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </body>
+</html>
